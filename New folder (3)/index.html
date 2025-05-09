@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasoon Mishra - UX Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="images\Icon\cases-icon (2).svg" alt="Logo" width="30">
+                PRASOON MISHRA
+            </a>
+            
+            <div class="nav-links">
+                <a href="#services"><img src="images\Icon\service-icon.svg" alt="" class="nav-icon"> Services</a>
+                <a href="#use-cases"><img src="images\Icon\cases-icon (2).svg" alt="" class="nav-icon"> Use Cases</a>
+                <a href="#strong-points"><img src="images\Icon\strengths-icon.svg" alt="" class="nav-icon"> Strengths</a>
+                <a href="#contact"><img src="images\Icon\contact-icon.svg" alt="" class="nav-icon"> Contact</a>
+            </div>
+            
+            <button id="darkModeToggle" class="tooltip-container" aria-label="Toggle dark mode">
+                <img src="images\Icon\moon-icon (2).svg" class="moon-icon" alt="Dark mode">
+                <img src="images\Icon\sun-icon.svg" class="sun-icon" alt="Light mode">
+                <span class="tooltip">dark-light-Mode</span>
+            </button>
+            
+            <button class="hamburger" aria-label="Menu">
+                <img src="images\Icon\menu-icon.svg" class="menu-icon" alt="Menu">
+                <img src="images\Icon\close-icon.svg" class="close-icon" alt="Close">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <img src="images/profile-photo.png" alt="Prasoon Mishra" class="profile-photo">
+            <h1>USER EXPERIENCE: DESIGNER</h1>
+            <h2>PRASOON MISHRA</h2>
+            <p>UNDERGRADUATE UX DESIGNER</p>
+            <p>Hi! I'm an undergrad UX designer. Always curious to learn and bring productivity to your organization.</p>
+            
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <button class="btn-portfolio">
+                    <img src="images\Icon\cases-icon (2).svg" alt="Portfolio" class="icon-color">
+                    PORTFOLIO
+                </button>
+                <button class="btn-contact">
+                    <img src="images\Icon\connect black.svg" alt="Contact" class="icon-color">
+                    LET'S TALK
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Purpose Section -->
+    <section id="purpose" class="purpose">
+        <h1>THE PURPOSE</h1>
+        <p>I design meaningful and innovative user experiences that solve real-world problems with creativity and functionality. Combining research, empathy, and user insights, I strive to create intuitive and impactful solutions.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h1>SERVICES I PROVIDE</h1>
+        <div class="skills-container">
+            <div class="skill-tag">UX Design</div>
+            <div class="skill-tag">Branding</div>
+            <div class="skill-tag">Web Design</div>
+            <div class="skill-tag">UI Design</div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <h1>USE CASES</h1>
+        <div class="case-grid">
+            <!-- Case 1 -->
+            <div class="case-card">
+                <img src="images\artists-platform.jpg" alt="Artists collaboration platform" loading="lazy">
+                <div class="case-content">
+                    <h2>A platform for Artists to Connect</h2>
+                    <button class="case-btn" onclick="openPdfViewer('images\Frame 3325.png')">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Case 2 -->
+            <div class="case-card">
+                <img src="images\medi-care.jpg" alt="Medi-Care App" loading="lazy">
+                <div class="case-content">
+                    <h2>MEDI-CARE PROJECT</h2>
+                    <button class="case-btn" onclick="openPdfViewer('images\Frame 3329.jpg')">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Case 3 -->
+            <div class="case-card">
+                <img src="images\Website-analysis.png" alt="Website analytics dashboard" loading="lazy">
+                <div class="case-content">
+                    <h2>WEBSITE EXPERIENCE ANALYSIS</h2>
+                    <button class="case-btn" onclick="openPdfViewer('images\Frame 3328.jpg')">
+                        See Analysis
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <span class="close-pdf" onclick="closePdfViewer()">&times;</span>
+            <iframe id="pdf-viewer" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Strong Points Section -->
+    <section id="strong-points" class="section">
+        <h1>MY STRONG POINTS</h1>
+        <div class="skills-container">
+            <div class="skill-tag">MAPPING EXPERIENCE</div>
+            <div class="skill-tag">USER FLOWS</div>
+            <div class="skill-tag">LEADERSHIP</div>
+            <div class="skill-tag">RESEARCH</div>
+            <div class="skill-tag">ETHNOGRAPHIC RESEARCH</div>
+            <div class="skill-tag">SELLABLE PRODUCTS</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>GET IN TOUCH</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="images\Icon\email-icon.svg" alt="Email">
+                <p>prasoon.mishra@mitwpu.edu.in</p>
+            </div>
+            <div class="contact-item">
+                <img src="images\Icon\connect black.svg" alt="Phone">
+                <p>+91 12345 67890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h1>THANKS FOR VISITING</h1>
+        <p>© 2024 Prasoon Mishra. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/icons/behance-icon.svg" alt="Behance"></a>
+            <a href="#"><img src="images/icons/dribbble-icon.svg" alt="Dribbble"></a>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <section class="collaboration-cta">
+        <div class="container">
+          <h2>Wanna work together?</h2>
+          <p>Write your expectations from me—I’d love to hear your ideas!</p>
+          <form class="collaboration-form">
+            <textarea 
+              placeholder="E.g., I need a frontend developer for a 3-month project with React..." 
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-portfolio">Send Message</button>
+          </form>
+        </div>
+      </section>
+</body>
+</html>
